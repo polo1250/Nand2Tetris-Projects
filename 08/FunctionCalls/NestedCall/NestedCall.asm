@@ -1,0 +1,831 @@
+    @256
+    D=A
+    @SP
+    M=D
+    @Sys$RET1
+    D=A
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+    @LCL
+    D=M
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+    @ARG
+    D=M
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+    @THIS
+    D=M
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+    @THAT
+    D=M
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+    @5
+    D=A
+    @0
+    D=A+D
+    @SP
+    A=M
+    D=A-D
+    @ARG
+    M=D
+    @SP
+    D=M
+    @LCL
+    M=D
+    @Sys.init
+    0;JMP
+  (Sys$RET1)
+@1
+D=A
+@255
+M=D
+(Sys.init)
+@2
+D=A
+@255
+M=D
+    @4000
+    D=A
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+@3
+D=A
+@255
+M=D
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=M
+    @THIS
+    M=D
+@4
+D=A
+@255
+M=D
+    @5000
+    D=A
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+@5
+D=A
+@255
+M=D
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=M
+    @THAT
+    M=D
+@6
+D=A
+@255
+M=D
+    @Sys.init$RET2
+    D=A
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+    @LCL
+    D=M
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+    @ARG
+    D=M
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+    @THIS
+    D=M
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+    @THAT
+    D=M
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+    @5
+    D=A
+    @0
+    D=A+D
+    @SP
+    A=M
+    D=A-D
+    @ARG
+    M=D
+    @SP
+    D=M
+    @LCL
+    M=D
+    @Sys.main
+    0;JMP
+  (Sys.init$RET2)
+@7
+D=A
+@255
+M=D
+    @5
+    D=A
+    @1
+    D=D+A
+    @addr
+    M=D
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=M
+    @addr
+    A=M
+    M=D
+@8
+D=A
+@255
+M=D
+  (Sys.init$LOOP)
+@9
+D=A
+@255
+M=D
+    @Sys.init$LOOP
+    0;JMP
+@10
+D=A
+@255
+M=D
+(Sys.main)
+    @0
+    D=A
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+    @0
+    D=A
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+    @0
+    D=A
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+    @0
+    D=A
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+    @0
+    D=A
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+@11
+D=A
+@255
+M=D
+    @4001
+    D=A
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+@12
+D=A
+@255
+M=D
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=M
+    @THIS
+    M=D
+@13
+D=A
+@255
+M=D
+    @5001
+    D=A
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+@14
+D=A
+@255
+M=D
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=M
+    @THAT
+    M=D
+@15
+D=A
+@255
+M=D
+    @200
+    D=A
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+@16
+D=A
+@255
+M=D
+    @1
+    D=A
+    @LCL
+    A=M
+    D=D+A
+    @addr
+    M=D
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=M
+    @addr
+    A=M
+    M=D
+@17
+D=A
+@255
+M=D
+    @40
+    D=A
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+@18
+D=A
+@255
+M=D
+    @2
+    D=A
+    @LCL
+    A=M
+    D=D+A
+    @addr
+    M=D
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=M
+    @addr
+    A=M
+    M=D
+@19
+D=A
+@255
+M=D
+    @6
+    D=A
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+@20
+D=A
+@255
+M=D
+    @3
+    D=A
+    @LCL
+    A=M
+    D=D+A
+    @addr
+    M=D
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=M
+    @addr
+    A=M
+    M=D
+@21
+D=A
+@255
+M=D
+    @123
+    D=A
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+@22
+D=A
+@255
+M=D
+    @Sys.main$RET3
+    D=A
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+    @LCL
+    D=M
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+    @ARG
+    D=M
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+    @THIS
+    D=M
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+    @THAT
+    D=M
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+    @5
+    D=A
+    @1
+    D=A+D
+    @SP
+    A=M
+    D=A-D
+    @ARG
+    M=D
+    @SP
+    D=M
+    @LCL
+    M=D
+    @Sys.add12
+    0;JMP
+  (Sys.main$RET3)
+@23
+D=A
+@255
+M=D
+    @5
+    D=A
+    @0
+    D=D+A
+    @addr
+    M=D
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=M
+    @addr
+    A=M
+    M=D
+@24
+D=A
+@255
+M=D
+    @0
+    D=A
+    @LCL
+    A=M
+    D=D+A
+    @addr
+    M=D
+    @addr
+    A=M
+    D=M
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+@25
+D=A
+@255
+M=D
+    @1
+    D=A
+    @LCL
+    A=M
+    D=D+A
+    @addr
+    M=D
+    @addr
+    A=M
+    D=M
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+@26
+D=A
+@255
+M=D
+    @2
+    D=A
+    @LCL
+    A=M
+    D=D+A
+    @addr
+    M=D
+    @addr
+    A=M
+    D=M
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+@27
+D=A
+@255
+M=D
+    @3
+    D=A
+    @LCL
+    A=M
+    D=D+A
+    @addr
+    M=D
+    @addr
+    A=M
+    D=M
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+@28
+D=A
+@255
+M=D
+    @4
+    D=A
+    @LCL
+    A=M
+    D=D+A
+    @addr
+    M=D
+    @addr
+    A=M
+    D=M
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+@29
+D=A
+@255
+M=D
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=M
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=D+M
+    M=D
+    @SP
+    M=M+1
+@30
+D=A
+@255
+M=D
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=M
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=D+M
+    M=D
+    @SP
+    M=M+1
+@31
+D=A
+@255
+M=D
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=M
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=D+M
+    M=D
+    @SP
+    M=M+1
+@32
+D=A
+@255
+M=D
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=M
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=D+M
+    M=D
+    @SP
+    M=M+1
+@33
+D=A
+@255
+M=D
+    @LCL
+    D=M
+    @R13
+    M=D
+    @R13
+    D=M
+    @5
+    D=D-A
+    A=D
+    D=M
+    @R14
+    M=D
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=M
+    @ARG
+    A=M
+    M=D
+    @ARG
+    D=M
+    @SP
+    M=D+1
+    @R13
+    D=M
+    @1
+    D=D-A
+    A=D
+    D=M
+    @THAT
+    M=D
+    @R13
+    D=M
+    @2
+    D=D-A
+    A=D
+    D=M
+    @THIS
+    M=D
+    @R13
+    D=M
+    @3
+    D=D-A
+    A=D
+    D=M
+    @ARG
+    M=D
+    @R13
+    D=M
+    @4
+    D=D-A
+    A=D
+    D=M
+    @LCL
+    M=D
+    @R14
+    A=M
+    0;JMP
+@34
+D=A
+@255
+M=D
+(Sys.add12)
+@35
+D=A
+@255
+M=D
+    @4002
+    D=A
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+@36
+D=A
+@255
+M=D
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=M
+    @THIS
+    M=D
+@37
+D=A
+@255
+M=D
+    @5002
+    D=A
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+@38
+D=A
+@255
+M=D
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=M
+    @THAT
+    M=D
+@39
+D=A
+@255
+M=D
+    @0
+    D=A
+    @ARG
+    A=M
+    D=D+A
+    @addr
+    M=D
+    @addr
+    A=M
+    D=M
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+@40
+D=A
+@255
+M=D
+    @12
+    D=A
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+@41
+D=A
+@255
+M=D
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=M
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=D+M
+    M=D
+    @SP
+    M=M+1
+@42
+D=A
+@255
+M=D
+    @LCL
+    D=M
+    @R13
+    M=D
+    @R13
+    D=M
+    @5
+    D=D-A
+    A=D
+    D=M
+    @R14
+    M=D
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=M
+    @ARG
+    A=M
+    M=D
+    @ARG
+    D=M
+    @SP
+    M=D+1
+    @R13
+    D=M
+    @1
+    D=D-A
+    A=D
+    D=M
+    @THAT
+    M=D
+    @R13
+    D=M
+    @2
+    D=D-A
+    A=D
+    D=M
+    @THIS
+    M=D
+    @R13
+    D=M
+    @3
+    D=D-A
+    A=D
+    D=M
+    @ARG
+    M=D
+    @R13
+    D=M
+    @4
+    D=D-A
+    A=D
+    D=M
+    @LCL
+    M=D
+    @R14
+    A=M
+    0;JMP

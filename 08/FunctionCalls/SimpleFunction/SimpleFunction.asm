@@ -1,0 +1,221 @@
+@1
+D=A
+@255
+M=D
+(SimpleFunction.test)
+    @0
+    D=A
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+    @0
+    D=A
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+@2
+D=A
+@255
+M=D
+    @0
+    D=A
+    @LCL
+    A=M
+    D=D+A
+    @addr
+    M=D
+    @addr
+    A=M
+    D=M
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+@3
+D=A
+@255
+M=D
+    @1
+    D=A
+    @LCL
+    A=M
+    D=D+A
+    @addr
+    M=D
+    @addr
+    A=M
+    D=M
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+@4
+D=A
+@255
+M=D
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=M
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=D+M
+    M=D
+    @SP
+    M=M+1
+@5
+D=A
+@255
+M=D
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=!M
+    M=D
+    @SP
+    M=M+1
+@6
+D=A
+@255
+M=D
+    @0
+    D=A
+    @ARG
+    A=M
+    D=D+A
+    @addr
+    M=D
+    @addr
+    A=M
+    D=M
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+@7
+D=A
+@255
+M=D
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=M
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=D+M
+    M=D
+    @SP
+    M=M+1
+@8
+D=A
+@255
+M=D
+    @1
+    D=A
+    @ARG
+    A=M
+    D=D+A
+    @addr
+    M=D
+    @addr
+    A=M
+    D=M
+    @SP
+    A=M
+    M=D
+    @SP
+    M=M+1
+@9
+D=A
+@255
+M=D
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=M
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=M-D
+    M=D
+    @SP
+    M=M+1
+@10
+D=A
+@255
+M=D
+    @LCL
+    D=M
+    @R13
+    M=D
+    @R13
+    D=M
+    @5
+    D=D-A
+    A=D
+    D=M
+    @R14
+    M=D
+    @SP
+    M=M-1
+    @SP
+    A=M
+    D=M
+    @ARG
+    A=M
+    M=D
+    @ARG
+    D=M
+    @SP
+    M=D+1
+    @R13
+    D=M
+    @1
+    D=D-A
+    A=D
+    D=M
+    @THAT
+    M=D
+    @R13
+    D=M
+    @2
+    D=D-A
+    A=D
+    D=M
+    @THIS
+    M=D
+    @R13
+    D=M
+    @3
+    D=D-A
+    A=D
+    D=M
+    @ARG
+    M=D
+    @R13
+    D=M
+    @4
+    D=D-A
+    A=D
+    D=M
+    @LCL
+    M=D
+    @R14
+    A=M
+    0;JMP
